@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#461959"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/login_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tajawalextrabold"
+        android:text="LOGIN"
+        android:textColor="#AED8CC"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/white"
+        android:hint="@string/username_label"
+        android:textSize="20sp"
+        android:fontFamily="@font/tajawalmedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_form"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/white"
+        android:fontFamily="@font/tajawalmedium"
+        android:hint="@string/password_label"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/hobbies_label_id"
+        android:layout_width="71dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/tajawalmedium"
+        android:text="Sports : "
+        android:textColor="#AED8CC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="261dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/gender_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toEndOf="@+id/gender_id"
+        app:layout_constraintTop_toTopOf="@+id/gender_id"
+        app:layout_constraintVertical_bias="0.384">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/male"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gender_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toEndOf="@+id/gender_id"
+            app:layout_constraintTop_toTopOf="@+id/gender_id" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:checked="false"
+            android:text="@string/female"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioButton1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toEndOf="@+id/radioButton1"
+            app:layout_constraintTop_toTopOf="@+id/radioButton1"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/footballCheckBox"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/tajawalregular"
+        android:text="@string/football"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hobbies_label_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toEndOf="@+id/hobbies_label_id"
+        app:layout_constraintTop_toTopOf="@+id/hobbies_label_id" />
+
+    <CheckBox
+        android:id="@+id/basketballCheckBox"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/tajawalregular"
+        android:text="@string/basketball"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/footballCheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toEndOf="@+id/footballCheckBox"
+        app:layout_constraintTop_toTopOf="@+id/footballCheckBox" />
+
+
+    <TextView
+        android:id="@+id/gender_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/tajawalmedium"
+        android:text="Gender : "
+        android:textColor="#AED8CC"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/footballCheckBox"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="304dp"
+        android:backgroundTint="#CD6688"
+        android:text="@string/login"
+        android:textColor="#AED8CC"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <Button
+        android:id="@+id/showUpButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#CD6688"
+        android:text="@string/open_dialog"
+        android:textColor="#AED8CC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

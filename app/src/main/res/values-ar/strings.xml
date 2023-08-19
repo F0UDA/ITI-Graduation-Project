@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ITI Project</string>
+    <string name="username_label">اسم المستخدم</string>
+    <string name="password_label">كلمة المرور</string>
+    <string name="login">إنشاء حساب</string>
+    <string name="login_label">نموذج تسجيل الدخول</string>
+    <string name="football">كرة القدم</string>
+    <string name="basketball">كرة السلة</string>
+    <string name="hobbies">الرياضيات المفضلة:</string>
+    <string name="gender">النوع:</string>\
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+    <string name="login_by">Login By:</string>
+    <string name="open_dialog">Open Dialog</string>
+    <string name="info_popUp_title">معلوماتك</string>
+    <string name="exit_popUp_msg">هل تريد الخروج من البرنامج؟ </string>
+    <string name="exit_popUp_title">تسجيل الخروج </string>
+
+
+
+
+
+</resources>

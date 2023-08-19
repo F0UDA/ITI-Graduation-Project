@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"> ITI Project </string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="login">Create Account</string>
+    <string name="login_label">Login Form</string>
+    <string name="football">Football</string>
+    <string name="basketball">Basketball</string>
+    <string name="hobbies">Favourites Sports:</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="login_by">Login By:</string>
+    <string name="open_dialog">Open Dialog</string>
+    <string name="info_popUp_title">Your info</string>
+    <string name="exit_popUp_msg">Do you want to exit ? </string>
+    <string name="exit_popUp_title">Exit </string>
+</resources>

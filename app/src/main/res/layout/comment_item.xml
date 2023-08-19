@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="360dp"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#CD6688"
+
+    >
+    <!-- A CardView that contains a TextView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:backgroundTint="#7A316F"
+        android:elevation="9dp"
+        android:layout_marginTop="20dp"
+        card_view:cardCornerRadius="12dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/person_imageView"
+                android:layout_width="123dp"
+                android:layout_height="139dp"
+                android:src="@drawable/person1"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.074"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="0.301" />
+
+            <TextView
+                android:id="@+id/person_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سعد الدالي"
+                android:textColor="#AED8CC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toBottomOf="@+id/person_imageView"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.096"
+                card_view:layout_constraintStart_toEndOf="@+id/person_imageView"
+                card_view:layout_constraintTop_toTopOf="@+id/person_imageView"
+                card_view:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#AED8CC"
+                android:textSize="16dp"
+                card_view:layout_constraintBottom_toBottomOf="@+id/person_imageView"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.067"
+                card_view:layout_constraintStart_toEndOf="@+id/person_imageView"
+                card_view:layout_constraintTop_toBottomOf="@+id/person_textview"
+                card_view:layout_constraintVertical_bias="0.219" />
+
+            <TextView
+                android:id="@+id/content_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tajawalbold"
+                android:text="انا سعد الدالي انت مين ؟ "
+                android:textColor="#AED8CC"
+                android:textSize="10dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/person_imageView"
+                card_view:layout_constraintVertical_bias="0.524" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
